@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require_relative 'lib/reckon/version'
 
 Gem::Specification.new do |s|
-  s.name = %q{reckon}
+  s.name = %q{reckon2}
   s.version = Reckon::VERSION
   s.authors = ["Andrew Cantino", "BlackEdder", "Ben Prew", "Ysbrand Galama"]
   s.email = %q{xxx@galama.net}
