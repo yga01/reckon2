@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'reckon'
+
+begin
+  options = Reckon::Options.parse_command_line_options
+rescue RuntimeError => e
+  puts("ERROR: #{e}")
+  exit(1)
+end
+reckon = Reckon::App.new(options)
+
+if options[:print_table]
+  reckon.output_table
+  if options[:table_output_file]
+    File.open(options[:table_output_file], 'w') { |fh| reckon.output_table fh }
+  end
+  exit
+end
+
+if !reckon.csv_parser.money_column_indices
+  puts "I was unable to determine either a single or a pair of combined columns to use as the money column."
+  exit
+end
+
+reckon.walk_backwards

@@ -1,0 +1,41 @@
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## SUBLIME
+*.sublime-project
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+
+## PROJECT::GENERAL
+coverage
+rdoc
+pkg
+
+## PROJECT::SPECIFIC
+.idea
+reckon_local
+private_tests
+
+## Bundler
+vendor
+.bundle
+# binstubs
+exec/
+
+# Don't commit gem files
+*.gem
+
+test.log
+test_log.txt
+
+.byebug_history
