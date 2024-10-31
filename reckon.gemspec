@@ -4,9 +4,9 @@ require_relative 'lib/reckon/version'
 Gem::Specification.new do |s|
   s.name = %q{reckon}
   s.version = Reckon::VERSION
-  s.authors = ["Andrew Cantino", "BlackEdder", "Ben Prew"]
-  s.email = %q{andrew@iterationlabs.com}
-  s.homepage = %q{https://github.com/cantino/reckon}
+  s.authors = ["Andrew Cantino", "BlackEdder", "Ben Prew", "Ysbrand Galama"]
+  s.email = %q{xxx@galama.net}
+  s.homepage = %q{https://github.com/yga01/reckon2}
   s.description = %q{Reckon automagically converts CSV files for use with the command-line accounting tool Ledger.  It also helps you to select the correct accounts associated with the CSV data using Bayesian machine learning.}
   s.summary = %q{Utility for interactively converting and labeling CSV files for the Ledger accounting tool.}
   s.licenses = ['MIT']
